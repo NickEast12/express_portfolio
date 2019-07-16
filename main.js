@@ -1,7 +1,7 @@
 // require
     const express = require('express');
     const ejs = require('ejs');
-    const port = 8080;
+    const port = process.env.PORT || 8080;
     
 
 //initialisation
