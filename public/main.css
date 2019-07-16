@@ -871,7 +871,6 @@ p {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    padding-top: 2.5em;
     text-align: center;
   }
   body .projects-background .main-projects-wrapper .main-projects-img-wrapper {
@@ -1277,6 +1276,9 @@ p {
   }
   body .projects-description-wrapper .description-content {
     font-size: 1.1em;
+  }
+  body .projects-background .main-projects-wrapper {
+    margin: 2.5em auto 0 auto;
   }
   body .projects-background .main-projects-wrapper .main-projects-img-wrapper img {
     height: 100%;
