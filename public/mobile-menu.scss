@@ -3,6 +3,15 @@ $secondary-font : 'Karla', sans-serif;
 $coolColour: rgba(0,199,140,1);
 $titleFont: 'Unica One', cursive;
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
 
 //#30d1b8
 //#32e29e
@@ -62,12 +71,11 @@ $titleFont: 'Unica One', cursive;
                 
             }
             .desktop-mobile-social {
-                display: inline;
+                display: none;
                 ul {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr 1fr;
                     width: 70%;
-                    margin: 3em auto 0 auto;
                     li {
                         i {
                             font-size: 20px;

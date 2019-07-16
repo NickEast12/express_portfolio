@@ -1,3 +1,13 @@
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 @media only screen and (min-width: 320px) {
   .mobile-menu-wrapper {
     width: 100%;
@@ -55,7 +65,7 @@
     background: linear-gradient(27deg, #30d1b8 0%, #32e29e 100%);
   }
   .mobile-menu-wrapper .mobile-overlay .desktop-mobile-social {
-    display: inline;
+    display: none;
   }
   .mobile-menu-wrapper .mobile-overlay .desktop-mobile-social ul {
     display: -ms-grid;
@@ -63,7 +73,6 @@
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 70%;
-    margin: 3em auto 0 auto;
   }
   .mobile-menu-wrapper .mobile-overlay .desktop-mobile-social ul li i {
     font-size: 20px;
