@@ -849,6 +849,7 @@ p {
   }
   body .projects-background {
     width: 100%;
+    height: 100%;
     background: #30d1b8;
     color: white;
     position: relative;
@@ -868,6 +869,7 @@ p {
   }
   body .projects-background .main-projects-wrapper {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
     padding-top: 2.5em;
     text-align: center;
