@@ -1,0 +1,19 @@
+{
+  "name": "new-project-express-testing",
+  "version": "1.0.0",
+  "description": "refacturing portfolio into ejs",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nick",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "hamburgers": "^1.1.3",
+    "particles.js": "^2.0.0",
+    "sass": "^1.22.0"
+  }
+}

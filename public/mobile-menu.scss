@@ -1,0 +1,310 @@
+$primary-font: 'Titillium Web', sans-serif;
+$secondary-font : 'Karla', sans-serif;
+$coolColour: rgba(0,199,140,1);
+$titleFont: 'Unica One', cursive;
+
+
+//#30d1b8
+//#32e29e
+
+
+@media only screen and (min-width:320px) {
+    .mobile-menu-wrapper {
+        width: 100%;
+        padding-top: .8em;
+        padding-left: .5em;
+        .main-logo {
+            width: 2em;
+            height: 2em;
+            margin: 1em 0 0 1em ;
+            fill: white;
+            transition: fill 1s ease;
+            position: relative;
+            z-index: 4;
+        }
+        .main-logo:hover {
+            fill: rgb(0,199,128);
+        }  
+        .menu {
+            cursor: pointer;
+            text-align: right;
+            margin-top: .3em;
+            position: fixed;
+            right: 2.5%;
+            top: .1%;
+            z-index: 15;
+            .hamburger {
+                transition: all .4s ease;
+                
+            }
+        }
+          
+        .mobile-overlay {
+            width: 100%;
+            z-index: 20;
+            height: 10vh;
+            top: 0;
+            left: 0;
+            position: fixed;
+            transform: translateY(-100vh);
+            transition: transform .5s ease;
+            .colourful-clip {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 10;
+                // background: #312e38;
+                background: #30d1b8;  /* fallback for old browsers */
+                background: linear-gradient(27deg,#30d1b8 0%,#32e29e 100%);
+                // background: -webkit-linear-gradient(#F27121, #E94057);  /* Chrome 10-25, Safari 5.1-6 */
+                // background: linear-gradient( #F27121, #E94057) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+            }
+            .desktop-mobile-social {
+                display: inline;
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    width: 70%;
+                    margin: 3em auto 0 auto;
+                    li {
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .up-arrow {
+                        position: absolute;
+                        top: 1.7em; 
+                        right: 1em;
+                        z-index: 15;
+                        font-size: 1.5em;
+                        padding: .1em;
+                        width: 9%;
+                        height: 5%;
+                        text-align: center;
+                        cursor: pointer;
+                        color:whitesmoke;
+                    }
+            nav {
+                position: relative;
+                z-index: 10;
+                ul {
+                    width: 80%;
+                    height: 100%;
+                    margin: 0 auto;
+                    padding-top: 2em;
+                    list-style-type: none;
+                    z-index: 10;
+                    .links-border {
+                        margin-top: .9em;
+                    }
+                    li {
+                        padding: .3em 0 ;
+                        font-size: 1.45em;
+                        color: white;
+                        text-align: center;
+                        font-family: $titleFont;
+                        .logo{
+                            height: 40px;
+                            width: 40px;
+                            margin-bottom: 1em;
+                            fill:black;
+                            background: white;
+                            padding: 5px 10px;
+                            transition-property: background fill; 
+                            transition-duration: .5s;
+                            transition-timing-function: ease-out;
+                        }
+                        .logo:hover {
+                            fill: white;
+                            background: black
+                        } 
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+@media only screen and (min-width:375px) {
+    body {
+        .mobile-menu-wrapper {
+            .mobile-overlay  {
+                .desktop-mobile-social {
+                    ul {
+                        margin-top: 7em;
+                    }
+                }
+                nav {
+                    ul {
+                        li {
+                            font-size: 1.6em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:414px) {
+    body {
+        .mobile-menu-wrapper {
+            .mobile-overlay  {
+                .desktop-mobile-social {
+                    ul {
+                        margin-top: 7em;
+                    }
+                }
+                nav {
+                    ul {
+                        li {
+                            font-size: 1.8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:1024px) {
+    .mobile-menu-wrapper {
+        .main-logo {
+            margin: 2em 0 0 3em ;
+        }
+        .mobile-overlay {
+            .colourful-clip {
+                height: 20vh;
+            }
+            .up-arrow {
+                top: 1.45em;
+                right: 5em;
+                width: 0;
+                height: 0;
+            }
+            nav {
+                margin-top: 3.2em;
+                ul {                    
+                    display: grid;
+                    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+                    .logo-li {
+                        position: absolute;
+                        top: -1em;
+                    }
+                    .links-border {
+                        cursor: pointer;
+                        opacity: .7;
+                        transition: opacity .5s ease;
+                        text-align: center;
+                    }
+                    .links-border:hover {
+                        opacity: 1;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+@media only screen and (min-width:1440px) { 
+    .mobile-menu-wrapper {
+        .main-logo {
+            margin: 2em 0 0 3em ;
+        }
+        .mobile-overlay {
+            overflow: hidden;
+            background: transparent;
+            width: 100%;
+            height: 100%;
+            font-size: 18px;
+            .colourful-clip {
+                height: 100vh;
+                opacity:.97;
+            }
+            nav {
+                margin-top: 6em;
+                ul {
+                    height: 100%;
+                    margin-top: 18%;
+                    margin-bottom: 25%;
+                    .links-border {
+                        border: none;
+                        position: relative;
+                    }
+                    .links-border:hover {
+                        color: black;
+                    }
+                    .links-border:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: black;
+                        visibility: hidden;
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                      }
+                    .links-border:hover:before {
+                        visibility: visible;
+                        -webkit-transform: scaleX(1);
+                        transform: scaleX(1);
+                      }
+                    .logo-li {
+                        left: 15.5%;
+                        top: -30%;
+                        .logo {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+                .desktop-mobile-social {
+                    background: transparent;
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    margin-top: -3%;
+                   ul {
+                       display: grid;
+                       width: 40%;
+                       margin: 0 auto;
+                       padding: 0;
+                       grid-template-columns: 1fr 1fr 1fr 1fr;
+                       li {
+                           text-align: center;
+                           i {
+                               font-size: .8em;
+                               color: white;
+                               opacity: 1;
+    
+                           }
+                           i:hover {
+                               color:black;
+                               cursor: pointer;
+                           }
+                       }
+                   }
+                }
+            }
+            .up-arrow {
+                right: 15%;
+                top: 12%;
+            }
+            
+        }
+       
+    }
+    
+    
+            
+              
+}
