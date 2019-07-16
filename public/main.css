@@ -370,6 +370,7 @@ p {
   body .main-header .title-card .introduction .button-wrapper button {
     margin-bottom: 1em;
     padding: .5em 0;
+    width: 100%;
     font-size: 1em;
     border-radius: 30px;
     font-family: "Titillium Web", sans-serif;
