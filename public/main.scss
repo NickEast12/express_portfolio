@@ -1914,11 +1914,13 @@ p {
           grid-template-columns: 1fr 400px;
            .main-projects-img-wrapper {
                width: 100%;
+               height: 60%;
                margin: 0 auto;
                text-align: left;
                text-align: center;
                img {
-                  width: 70%;
+                  width: 60%;
+                  height: 100%;
                }
            }
            .main-project-key-points {

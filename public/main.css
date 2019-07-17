@@ -1877,12 +1877,14 @@ p {
   }
   body .projects-background .main-projects-wrapper .main-projects-img-wrapper {
     width: 100%;
+    height: 60%;
     margin: 0 auto;
     text-align: left;
     text-align: center;
   }
   body .projects-background .main-projects-wrapper .main-projects-img-wrapper img {
-    width: 70%;
+    width: 60%;
+    height: 100%;
   }
   body .projects-background .main-projects-wrapper .main-project-key-points {
     font-size: 1.2em;
