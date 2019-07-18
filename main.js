@@ -78,6 +78,10 @@
             auth: {
               user: process.env.NODE_EMAIL,
               pass: process.env.NODE_PASSWORD
+            },
+            tls: {
+                // do not fail on invalid certs
+                rejectUnauthorized: false
             }
         });
         mailOpts = {
