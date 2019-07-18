@@ -2,11 +2,9 @@
     const express = require('express');
     const ejs = require('ejs');
     const port = process.env.PORT || 8080;
-    
-
-
-
-
+    const nodemailer = require('nodemailer');
+    const bodyParser = require('body-parser');
+    require('dotenv').config();
 //initialisation
     const app = express();
 
@@ -67,22 +65,39 @@
     });
 
 
-
-
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
+// nodeMailer 
+    app.use(bodyParser.urlencoded({ extended: false}));
+    app.use(bodyParser.json());
+// POST Route
+    app.post('/home-page-contact', function(req, res){
+        let mailOpts, smtpTrans;
+        smtpTrans = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 465,
+            secure: true,
+            auth: {
+              user: process.env.NODE_EMAIL,
+              pass: process.env.NODE_PASSWORD
+            }
+        });
+        mailOpts = {
+            from: req.body.name + '  ' + req.body.email + ' ',
+            to: 'nickeast1998@gmail.com',
+            subject:`New Website Enquiry from ${req.body.name}`,
+            // text: `${req.body.name} (${req.body.email}) : ${req.body.message}`,
+            html: '<h3>You have a new message from: </h3>' + req.body.name + '<br>' + ' <h4>Their email is:</h4> ' + req.body.email + '<br>' + '<h4>Message:</h4>' + '<br>' + req.body.message
+          };
+        smtpTrans.sendMail(mailOpts, function (error, response) {
+            if (error) {
+              res.render('index');
+              console.log(`ur a dick it didnt work, stoopid cunt  ${error}`);
+            }
+            else {
+              res.render('contact');
+              console.log('success this message has sent');
+            }
+          });
+    });
 
 // app listen on port 
     app.listen(port, () => {
