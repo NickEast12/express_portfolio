@@ -1122,7 +1122,8 @@ p {
     height: 85vh;
     background: transparent;
     position: relative;
-    margin-bottom: 14em;
+    margin-bottom: 18em;
+    z-index: 14;
   }
   body .under-construction-background .under-construction-scew {
     width: 100%;
