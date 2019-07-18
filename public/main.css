@@ -1117,6 +1117,40 @@ p {
     font-family: "Titillium Web", sans-serif;
     text-transform: lowercase;
   }
+  body .under-construction-background {
+    width: 100%;
+    height: 85vh;
+    background: transparent;
+    position: relative;
+    margin-bottom: 14em;
+  }
+  body .under-construction-background .under-construction-scew {
+    width: 100%;
+    height: 89vh;
+    background: #30d1b8;
+    position: absolute;
+    -webkit-transform: skewY(1.5deg);
+            transform: skewY(1.5deg);
+    top: -1em;
+    z-index: -2;
+  }
+  body .under-construction-background .mobile-menu-wrapper .logo-fix {
+    margin: .2em 0 0 1em;
+  }
+  body .under-construction-background .under-construction-wrapper {
+    width: 90%;
+    margin: 30% auto;
+    text-align: center;
+    color: #312e38;
+  }
+  body .under-construction-background .under-construction-wrapper i {
+    color: #312e38;
+    font-size: 35px;
+    margin: .25em 0;
+  }
+  body .under-construction-background .under-construction-wrapper h2 {
+    margin: .25em 0;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -1854,6 +1888,17 @@ p {
         grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
   }
+  body .under-construction-background .under-construction-wrapper {
+    font-size: 1.9em;
+    margin-bottom: 30em;
+  }
+  body .under-construction-background .under-construction-wrapper i {
+    font-size: 2em;
+    margin: .25em 0;
+  }
+  body .under-construction-background .under-construction-wrapper h2 {
+    margin: .25em 0;
+  }
 }
 
 @media only screen and (min-width: 1040px) {
@@ -1895,15 +1940,14 @@ p {
   }
   body .projects-description-wrapper-two {
     margin-bottom: 23em;
-    padding: 9em 0;
-    margin-top: 0;
+    padding: 3em 0 4em 0;
   }
   body .projects-description-wrapper-two .description-content {
     font-size: 1.2em;
   }
   body .contact-background {
     background: #312e38;
-    height: 96vh;
+    height: 76vh;
   }
   body .contact-background .contact-header {
     width: 40%;
@@ -1943,6 +1987,20 @@ p {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
+  }
+  body .under-construction-background .under-construction-scew {
+    top: -1.2em;
+  }
+  body .under-construction-background .under-construction-wrapper {
+    font-size: 1.3em;
+    margin: 4em auto 30em auto;
+  }
+  body .under-construction-background .under-construction-wrapper i {
+    font-size: 2em;
+    margin: .5em 0;
+  }
+  body .under-construction-background .under-construction-wrapper h2 {
+    margin: .5em 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
