@@ -2003,4 +2003,16 @@ p {
     margin: .5em 0;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  body .main-projects-container .main-projects-wrapper {
+    max-width: 900px;
+  }
+  body .projects-background .main-projects-wrapper {
+    max-width: 1240px;
+  }
+  body .projects-description-wrapper-two .description-content {
+    max-width: 1100px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
