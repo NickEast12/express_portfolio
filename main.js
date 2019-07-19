@@ -5,8 +5,9 @@
     const nodemailer = require('nodemailer');
     const bodyParser = require('body-parser');
     require('dotenv').config();
-    const { google } = require("googleapis");
-    const OAuth2 = google.auth.OAuth2;
+    // const { google } = require("googleapis");
+    // const OAuth2 = google.auth.OAuth2;
+    const xoauth2 = require('xoauth2');
 //initialisation
     const app = express();
 
@@ -81,23 +82,14 @@
             port: 465,
             secure: true,
             auth: {
-                type: 'oauth2',
-                user: process.env.NODE_EMAIL,
-                clientId: '315338540456-d0htdueikqlqct5k2gvh2ulnond38fq1.apps.googleusercontent.com',
-                clientSecret: 'ARC7R6OZj04NIxan51irV6bx',
-                refreshToken: '1/Cu0UhZjtyDOhAkfw4fMD8MhYLBHMqRlxtUvoSHkgE8o',
-            //   user: process.env.NODE_EMAIL,
-            //   pass: process.env.NODE_PASSWORD
-            },
-            tls: {
-                rejectUnauthorized: false
-              }
+              user: process.env.GMAIL_ADDRESS,
+              pass: process.env.GMAIL_PASSWORD
+            }
         });
         mailOpts = {
             from: req.body.name + '  ' + req.body.email + ' ',
             to: 'nickeast1998@gmail.com',
             subject:`New Website Enquiry from ${req.body.name}`,
-            // text: `${req.body.name} (${req.body.email}) : ${req.body.message}`,
             html: '<h3>You have a new message from: </h3>' + req.body.name + '<br>' + ' <h4>Their email is:</h4> ' + req.body.email + '<br>' + '<h4>Message:</h4>' + '<br>' + req.body.message
           };
         smtpTrans.sendMail(mailOpts, function (error, response) {
