@@ -1210,10 +1210,10 @@ p {
          .projects-background {
              height: 98vh;
             .main-projects-wrapper {
-                margin: 4em auto 0 auto;
+                margin: 2em auto 0 auto;
                 .main-projects-img-wrapper {
                     img {
-                        height: 250px;
+                        height: 100%;
                     }
                 }
                 .main-project-key-points {
@@ -1228,23 +1228,7 @@ p {
                 font-size: 1.2em;   
             }
         }
-        .projects-background {
-            .main-projects-wrapper {
-                margin: 4em auto 0 auto;
-                .main-projects-img-wrapper {
-                    img {
-                        height: 250px;
-                    }
-                }
-            }
-        }
-        .projects-description-wrapper {  
-            height: 500px; 
-            padding-top: 3em;         
-            .description-content {
-                font-size: 1.1em;  
-            }
-        }
+       
         
     }
 }
