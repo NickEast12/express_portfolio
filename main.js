@@ -81,7 +81,10 @@
             auth: {
               user: process.env.NODE_EMAIL,
               pass: process.env.NODE_PASSWORD
-            }
+            },
+            tls: {
+                rejectUnauthorized: false
+              }
         });
         mailOpts = {
             from: req.body.name + '  ' + req.body.email + ' ',
@@ -92,7 +95,7 @@
           };
         smtpTrans.sendMail(mailOpts, function (error, response) {
             if (error) {
-              res.render('index');
+              res.render('error-page');
               console.log(` ${error}  :  ${response}`);
             }
             else {
