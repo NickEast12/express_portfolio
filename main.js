@@ -5,6 +5,8 @@
     const nodemailer = require('nodemailer');
     const bodyParser = require('body-parser');
     require('dotenv').config();
+    const { google } = require("googleapis");
+    const OAuth2 = google.auth.OAuth2;
 //initialisation
     const app = express();
 
@@ -79,8 +81,13 @@
             port: 465,
             secure: true,
             auth: {
-              user: process.env.NODE_EMAIL,
-              pass: process.env.NODE_PASSWORD
+                type: 'oauth2',
+                user: process.env.NODE_EMAIL,
+                clientId: '315338540456-d0htdueikqlqct5k2gvh2ulnond38fq1.apps.googleusercontent.com',
+                clientSecret: 'ARC7R6OZj04NIxan51irV6bx',
+                refreshToken: '1/Cu0UhZjtyDOhAkfw4fMD8MhYLBHMqRlxtUvoSHkgE8o',
+            //   user: process.env.NODE_EMAIL,
+            //   pass: process.env.NODE_PASSWORD
             },
             tls: {
                 rejectUnauthorized: false
