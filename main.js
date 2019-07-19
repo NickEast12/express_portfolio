@@ -78,15 +78,11 @@
             auth: {
               user: process.env.NODE_EMAIL,
               pass: process.env.NODE_PASSWORD
-            },
-            tls: {
-                // do not fail on invalid certs
-                rejectUnauthorized: false
             }
         });
         mailOpts = {
             from: req.body.name + '  ' + req.body.email + ' ',
-            to: 'nickeast1998@gmail.com',
+            to: 'nick_east@yahoo.com',
             subject:`New Website Enquiry from ${req.body.name}`,
             // text: `${req.body.name} (${req.body.email}) : ${req.body.message}`,
             html: '<h3>You have a new message from: </h3>' + req.body.name + '<br>' + ' <h4>Their email is:</h4> ' + req.body.email + '<br>' + '<h4>Message:</h4>' + '<br>' + req.body.message
