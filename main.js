@@ -63,6 +63,9 @@
     app.get('/under-constuction', (req, res) => {
         res.render('under-constuction');
     });
+    app.get('/error-page', (req, res) => {
+        res.render('error-page');
+    });
 
 
 // nodeMailer 
@@ -82,7 +85,7 @@
         });
         mailOpts = {
             from: req.body.name + '  ' + req.body.email + ' ',
-            to: 'nick_east@yahoo.com',
+            to: 'nickeast1998@gmail.com',
             subject:`New Website Enquiry from ${req.body.name}`,
             // text: `${req.body.name} (${req.body.email}) : ${req.body.message}`,
             html: '<h3>You have a new message from: </h3>' + req.body.name + '<br>' + ' <h4>Their email is:</h4> ' + req.body.email + '<br>' + '<h4>Message:</h4>' + '<br>' + req.body.message
@@ -90,11 +93,11 @@
         smtpTrans.sendMail(mailOpts, function (error, response) {
             if (error) {
               res.render('index');
-              console.log(`ur a dick it didnt work, stoopid cunt  ${error}`);
+              console.log(` ${error}  :  ${response}`);
             }
             else {
               res.render('contact');
-              console.log('success this message has sent');
+              console.log(`success this message has sent`);
             }
           });
     });
