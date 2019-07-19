@@ -1284,6 +1284,9 @@ p {
   body .social-media {
     margin-right: 9em;
   }
+  body .projects-background {
+    height: 98vh;
+  }
   body .projects-background .main-projects-wrapper {
     margin: 4em auto 0 auto;
   }
@@ -1312,12 +1315,6 @@ p {
   }
   body .projects-description-wrapper .description-content {
     font-size: 1.1em;
-  }
-  body .projects-background .main-projects-wrapper {
-    margin: 2.5em auto 0 auto;
-  }
-  body .projects-background .main-projects-wrapper .main-projects-img-wrapper img {
-    height: 100%;
   }
 }
 
@@ -1523,19 +1520,25 @@ p {
     color: #30d1b8;
     margin: 0 .2em;
   }
+  body .projects-background {
+    height: 99vh;
+  }
   body .projects-background .main-projects-wrapper .main-projects-img-wrapper {
     width: 70%;
     margin: 0 auto;
     text-align: center;
   }
   body .projects-background .main-projects-wrapper .main-projects-img-wrapper img {
-    width: 100%;
+    width: 80%;
   }
   body .projects-background .main-projects-wrapper .main-project-key-points {
-    font-size: 1.5em;
+    font-size: 1.1em;
+  }
+  body .projects-description-wrapper-two .description-scew {
+    top: -5em;
   }
   body .projects-description-wrapper-two .description-content {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   body .contact-background {
     background: #312e38;

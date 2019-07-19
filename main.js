@@ -75,7 +75,7 @@
     app.use(bodyParser.urlencoded({ extended: false}));
     app.use(bodyParser.json());
 // POST Route
-    app.post('/home-page-contact', function(req, res){
+    app.post('/contact-form', function(req, res){
         let mailOpts, smtpTrans;
         smtpTrans = nodemailer.createTransport({
             host: 'smtp.gmail.com',
