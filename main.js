@@ -94,11 +94,11 @@
           };
         smtpTrans.sendMail(mailOpts, function (error, response) {
             if (error) {
-              res.render('error-page');
+              res.render('index');
               console.log(` ${error}  :  ${response}`);
             }
             else {
-              res.render('contact');
+              res.render('email-sent');
               console.log(`success this message has sent`);
             }
           });
