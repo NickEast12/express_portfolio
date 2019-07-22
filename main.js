@@ -82,13 +82,13 @@
             port: 465,
             secure: true,
             auth: {
-              user: process.env.GMAIL_ADDRESS,
-              pass: process.env.GMAIL_PASSWORD 
+              user: GMAIL_ADDRESS,
+              pass: GMAIL_PASSWORD 
             }
         });
         mailOpts = {
             from: req.body.name + '  ' + req.body.email + ' ',
-            to: 'nickeast1998@gmail.com',
+            to: GMAIL_TO_EMAIL,
             subject:`New Website Enquiry from ${req.body.name}`,
             html: '<h3>You have a new message from: </h3>' + req.body.name + '<br>' + ' <h4>Their email is:</h4> ' + req.body.email + '<br>' + '<h4>Message:</h4>' + '<br>' + req.body.message
           };
