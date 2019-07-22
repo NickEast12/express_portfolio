@@ -7,6 +7,8 @@
     require('dotenv').config();
 //initialisation
     const app = express();
+    const GMAIL_EMAIL = process.env.GMAIL_ADDRESS;
+    const GMAIL_PASSWORD = process.env.GMAIL_PASSWORD;
 
 // ejs rendering
     app.set('view engine', 'ejs');
