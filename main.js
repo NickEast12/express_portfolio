@@ -82,7 +82,7 @@
             port: 465,
             secure: true,
             auth: {
-              user: GMAIL_ADDRESS,
+              user: GMAIL_EMAIL,
               pass: GMAIL_PASSWORD 
             }
         });
