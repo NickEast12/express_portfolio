@@ -83,7 +83,8 @@
             secure: true,
             auth: {
               user: process.env.GMAIL_ADDRESS,
-              pass: process.env.GMAIL_PASSWORD
+            //   pass: process.env.GMAIL_PASSWORD 
+            pass: 'fthikamegogmbrvc'
             }
         });
         mailOpts = {
