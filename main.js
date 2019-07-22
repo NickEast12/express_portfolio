@@ -5,9 +5,6 @@
     const nodemailer = require('nodemailer');
     const bodyParser = require('body-parser');
     require('dotenv').config();
-    // const { google } = require("googleapis");
-    // const OAuth2 = google.auth.OAuth2;
-    const xoauth2 = require('xoauth2');
 //initialisation
     const app = express();
 
@@ -82,8 +79,10 @@
             port: 465,
             secure: true,
             auth: {
-              user: process.env.GMAIL_ADDRESS,
-              pass: process.env.GMAIL_PASSWORD 
+                user: 'nickportfolio24@gmail.com',
+                pass: 'zowoesmwhvbcucdc'
+            //   user: process.env.GMAIL_ADDRESS,
+            //   pass: process.env.GMAIL_PASSWORD 
             }
         });
         mailOpts = {
