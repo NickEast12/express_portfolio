@@ -79,10 +79,8 @@
             port: 465,
             secure: true,
             auth: {
-                user: 'nickportfolio24@gmail.com',
-                pass: 'zowoesmwhvbcucdc'
-            //   user: process.env.GMAIL_ADDRESS,
-            //   pass: process.env.GMAIL_PASSWORD 
+              user: process.env.GMAIL_ADDRESS,
+              pass: process.env.GMAIL_PASSWORD 
             }
         });
         mailOpts = {
