@@ -66,8 +66,8 @@
     app.get('/under-constuction', (req, res) => {
         res.render('under-constuction');
     });
-    app.get('/error-page', (req, res) => {
-        res.render('error-page');
+    app.get('/email-sent', (req, res) => {
+        res.render('email-sent');
     });
 
 
