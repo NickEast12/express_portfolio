@@ -1,15 +1,17 @@
 // require
+    require('dotenv').config();
+    const sslRedirect = require('heroku-ssl-redirect');
     const express = require('express');
     const ejs = require('ejs');
     const port = process.env.PORT || 8080;
     const nodemailer = require('nodemailer');
     const bodyParser = require('body-parser');
-    require('dotenv').config();
+    
 //initialisation
     const app = express();
-    const GMAIL_EMAIL = process.env.GMAIL_ADDRESS;
-    const GMAIL_PASSWORD = process.env.GMAIL_PASSWORD;
-    const GMAIL_TO_EMAIL = process.env.GMAIL_TO_ADDRESS;
+
+// https 
+    app.use(sslRedirect());
 
 // ejs rendering
     app.set('view engine', 'ejs');
