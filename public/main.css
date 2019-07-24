@@ -1358,6 +1358,7 @@ p {
     position: absolute;
     width: 100%;
     height: 40px;
+    z-index: 5;
     bottom: -12px;
     background: #312e38;
     -webkit-transform: skewY(1.5deg);
@@ -1387,9 +1388,8 @@ p {
   }
   body .resources-wrapper {
     width: 100%;
-    height: 800px;
     background: whitesmoke;
-    padding-top: 3em;
+    padding: 3em 0;
     margin-bottom: 14em;
     position: relative;
   }
@@ -1831,213 +1831,32 @@ p {
   body .email-sent-wrapper .email-sent-content .email-back-button {
     width: 50%;
   }
-  body .about-main-wrapper {
-    background: whitesmoke;
-    width: 100%;
-    height: 45vh;
-    position: relative;
-  }
-  body .about-main-wrapper .mobile-menu-wrapper .logo-fix {
-    margin: .2em 0 0 1em;
-    fill: #312e38;
-  }
-  body .about-main-wrapper .mobile-menu-wrapper .hamburger-inner, body .about-main-wrapper .mobile-menu-wrapper .hamburger-inner::before, body .about-main-wrapper .mobile-menu-wrapper .hamburger-inner::after {
-    background: #312e38;
-  }
-  body .about-main-wrapper .about-main-scew {
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    background: #312e38;
-    bottom: -10px;
-    -webkit-transform: skewY(1.5deg);
-            transform: skewY(1.5deg);
-  }
   body .about-main-wrapper .about-title-content {
-    width: 60%;
-    margin: 2em auto 0 auto;
-    text-align: center;
-    color: #312e38;
-  }
-  body .about-main-wrapper .about-title-content i {
-    color: #312e38;
-    font-size: 1.7em;
-    margin-bottom: .4em;
-  }
-  body .about-wrapper-intro {
-    width: 100%;
-    background: #312e38;
-    padding: .5em 0;
-    position: relative;
+    font-size: 1.3em;
+    margin-top: 2em;
   }
   body .about-wrapper-intro .about-wrapper-intro-scew {
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    bottom: -25px;
+    bottom: -20px;
     background: #312e38;
-    z-index: 5;
-    -webkit-transform: skewY(-2.5deg);
-            transform: skewY(-2.5deg);
   }
   body .about-wrapper-intro .about-wrapper-img {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    background: whitesmoke;
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-    padding: .8em;
-  }
-  body .about-wrapper-intro .about-wrapper-img img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  body .about-wrapper-intro .about-wrapper-content {
-    color: whitesmoke;
-    width: 85%;
-    margin: 3.5em auto 0 auto;
-    line-height: 1.8em;
-    text-align: center;
-  }
-  body .about-wrapper-intro .about-wrapper-content p {
-    margin: .95em 0;
-  }
-  body .skill-dist-wrapper {
-    width: 100%;
-    position: relative;
-    text-align: center;
-    padding-top: 4em;
-    background: whitesmoke;
-  }
-  body .skill-dist-wrapper .skill-dist-scew {
-    position: absolute;
-    bottom: -5px;
-    width: 100%;
-    height: 40px;
-    z-index: 4;
-    background: whitesmoke;
-    -webkit-transform: skewY(1.5deg);
-            transform: skewY(1.5deg);
-  }
-  body .skill-dist-wrapper h2 {
-    margin: 1.25em 0;
-  }
-  body .skill-dist-wrapper .focus-wrapper {
-    width: 80%;
-    margin: 3.5em auto 0 auto;
-    padding-bottom: 4em;
-  }
-  body .skill-dist-wrapper .focus-wrapper .individual-skillbar-wrapper {
-    margin-top: .5em;
-  }
-  body .skill-dist-wrapper .focus-wrapper .individual-skillbar-wrapper .skillbar-title {
-    text-align: left;
-    margin: .25em 0;
-    font-size: .9em;
-  }
-  body .skill-dist-wrapper .focus-wrapper .individual-skillbar-wrapper .skillbar {
-    width: 100%;
-    height: 1.5em;
-    background: #dadfe1;
-    position: relative;
-    border-radius: 5px;
-  }
-  body .skill-dist-wrapper .focus-wrapper .individual-skillbar-wrapper .skillbar .inner-skillbar {
-    position: absolute;
-    top: 0;
-    height: 1.5em;
-    background: #00c78c;
-    width: 80%;
-    z-index: 1;
-    border-radius: 5px;
-  }
-  body .skill-dist-wrapper .focus-wrapper .individual-skillbar-wrapper .skillbar .oojs-c {
-    background: #f03434;
     width: 40%;
   }
-  body .skill-dist-wrapper .focus-wrapper .individual-skillbar-wrapper .skillbar .react-js {
-    background: #52b3d9;
-    width: 50%;
+  body .about-wrapper-intro .about-wrapper-content {
+    width: 75%;
   }
-  body .skill-dist-wrapper .focus-wrapper .individual-skillbar-wrapper .skillbar .project-buidling {
-    width: 95%;
-    background: #f89406;
-  }
-  body .call-to-action-wrapper {
-    background: #312e38;
-    width: 100%;
-    color: whitesmoke;
-    position: relative;
-  }
-  body .call-to-action-wrapper .call-to-action-skew {
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    bottom: -12px;
-    background: #312e38;
-    -webkit-transform: skewY(1.5deg);
-            transform: skewY(1.5deg);
-  }
-  body .call-to-action-wrapper .call-to-action-inner {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 2em 0;
-  }
-  body .call-to-action-wrapper .call-to-action-inner p {
-    margin-top: .5em;
-  }
-  body .call-to-action-wrapper .call-to-action-inner button {
-    background: transparent;
-    border-radius: 5px;
-    width: 70%;
-    text-align: center;
-    margin-top: 1.5em;
-    padding: .5em 0;
-    text-transform: uppercase;
-    color: #312e38;
-    border: solid 2px #30d1b8;
-    background: #30d1b8;
-    cursor: pointer;
-  }
-  body .resources-wrapper {
-    width: 100%;
-    height: 800px;
-    background: whitesmoke;
-    padding-top: 3em;
-    margin-bottom: 14em;
-    position: relative;
-  }
-  body .resources-wrapper .resource-wrapper-scew {
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    background: whitesmoke;
-    -webkit-transform: skewY(-1.5deg);
-            transform: skewY(-1.5deg);
+  body .skill-dist-wrapper .skill-dist-scew {
     bottom: -10px;
   }
-  body .resources-wrapper .resources-inner {
-    width: 70%;
+  body .skill-dist-wrapper .skills-about-wrapper {
+    width: 80%;
     margin: 0 auto;
   }
-  body .resources-wrapper .resources-inner h2 {
-    text-align: center;
+  body .skill-dist-wrapper .focus-wrapper {
+    width: 60%;
   }
-  body .resources-wrapper .resources-inner p {
-    text-align: center;
-    margin: .45em 0;
-  }
-  body .resources-wrapper .resources-inner .indiv-resources {
-    margin: 1em 0;
-  }
-  body .resources-wrapper .resources-inner .indiv-resources p {
-    text-align: left;
-  }
-  body .resources-wrapper .resources-inner .indiv-resources h4 {
-    color: #30d1b8;
-    font-size: 1.5em;
+  body .call-to-action-wrapper .call-to-action-inner button {
+    width: 50%;
   }
 }
 
@@ -2378,6 +2197,60 @@ p {
   body .email-sent-wrapper .email-sent-content .email-back-button {
     width: 40%;
   }
+  body .about-main-wrapper {
+    height: 35vh;
+  }
+  body .about-main-wrapper .about-main-scew {
+    bottom: -15px;
+  }
+  body .about-main-wrapper .about-title-content {
+    font-size: 1.4em;
+    margin-top: 4.5em;
+  }
+  body .about-wrapper-intro {
+    padding-bottom: 4em;
+  }
+  body .about-wrapper-intro .about-wrapper-intro-scew {
+    bottom: -10px;
+    -webkit-transform: skewY(-1deg);
+            transform: skewY(-1deg);
+  }
+  body .about-wrapper-intro .about-wrapper-img {
+    width: 38%;
+    margin-top: 3em;
+  }
+  body .about-wrapper-intro .about-wrapper-content {
+    width: 70%;
+    font-size: 1.3em;
+  }
+  body .skill-dist-wrapper h2 {
+    font-size: 2.1em;
+  }
+  body .skill-dist-wrapper .skill-dist-scew {
+    bottom: -10px;
+  }
+  body .skill-dist-wrapper .skills-about-wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+  body .call-to-action-wrapper {
+    padding: 4em 0;
+    font-size: 1.3em;
+  }
+  body .call-to-action-wrapper .call-to-action-inner button {
+    width: 50%;
+    font-size: .7em;
+  }
+  body .resources-wrapper {
+    padding-top: 5em;
+    margin-bottom: 18em;
+    font-size: 1.3em;
+  }
+  body .resources-wrapper .resource-wrapper-scew {
+    bottom: -10px;
+    -webkit-transform: skewY(-1deg);
+            transform: skewY(-1deg);
+  }
 }
 
 @media only screen and (min-width: 1040px) {
@@ -2480,6 +2353,94 @@ p {
   }
   body .under-construction-background .under-construction-wrapper h2 {
     margin: .5em 0;
+  }
+  body .about-main-wrapper {
+    height: 30vh;
+  }
+  body .about-main-wrapper .about-main-scew {
+    bottom: -20px;
+  }
+  body .about-main-wrapper .about-title-content {
+    font-size: 1.2em;
+    margin-top: 2.5em;
+  }
+  body .about-wrapper-intro {
+    padding-bottom: 4em;
+  }
+  body .about-wrapper-intro .about-wrapper-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+  }
+  body .about-wrapper-intro .about-wrapper-intro-scew {
+    bottom: -18px;
+    -webkit-transform: skewY(-1deg);
+            transform: skewY(-1deg);
+  }
+  body .about-wrapper-intro .about-wrapper-img {
+    width: 50%;
+    margin-top: 3em;
+  }
+  body .about-wrapper-intro .about-wrapper-content {
+    width: 100%;
+    font-size: 1.2em;
+  }
+  body .skill-dist-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 7em 0;
+  }
+  body .skill-dist-wrapper h2 {
+    font-size: 2.1em;
+  }
+  body .skill-dist-wrapper .skill-dist-scew {
+    bottom: -18px;
+  }
+  body .skill-dist-wrapper .skills-about-wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+  body .skill-dist-wrapper .focus-wrapper {
+    margin: 0 auto;
+  }
+  body .call-to-action-wrapper {
+    padding: 4em 0;
+    font-size: 1.3em;
+  }
+  body .call-to-action-wrapper .call-to-action-skew {
+    bottom: -18px;
+  }
+  body .call-to-action-wrapper .call-to-action-inner button {
+    width: 50%;
+    font-size: .7em;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+  body .call-to-action-wrapper .call-to-action-inner button:hover {
+    background: whitesmoke;
+    border: solid 2px whitesmoke;
+  }
+  body .resources-wrapper {
+    padding-top: 5em;
+    margin-bottom: 18em;
+    font-size: 1.2em;
+  }
+  body .resources-wrapper .resources-inner {
+    width: 70%;
+    font-size: 1.2em;
+  }
+  body .resources-wrapper .resources-inner .indiv-resources {
+    margin-top: 2em;
+  }
+  body .resources-wrapper .resource-wrapper-scew {
+    bottom: -10px;
+    -webkit-transform: skewY(-1deg);
+            transform: skewY(-1deg);
   }
 }
 
