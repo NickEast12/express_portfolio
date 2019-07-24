@@ -9,9 +9,13 @@
     
 //initialisation
     const app = express();
+    const GMAIL_EMAIL = process.env.GMAIL_ADDRESS;
+    const GMAIL_PASSWORD = process.env.GMAIL_PASSWORD;
+    const GMAIL_TO_EMAIL = process.env.GMAIL_TO_ADDRESS;
 
 // https 
     app.use(sslRedirect());
+
 
 // ejs rendering
     app.set('view engine', 'ejs');
