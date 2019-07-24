@@ -68,7 +68,7 @@
                                                     </g>
                                                 </svg></li>
                                             <li class="links-border"><a href='/'>Home</a></li>
-                                            <li class="links-border"><a href="under-constuction">About</a></li>
+                                            <li class="links-border"><a href="contact">About</a></li>
                                             <li class="links-border"><a href='/portfolio'>Projects</a></li>
                                             <li class="links-border"><a href="under-constuction">Gallery</a></li>
                                             <li class="links-border"><a href="/contact">Contact</a></li>
@@ -253,20 +253,20 @@
             <div class="footer-content">
                     <h3>Feeling formal?</h3>
                     <p>Then get in contact with me using the form below</p>
-                <form method="POST" role="form" action="/contact-form">
+                <form method="POST" role="form" action="/contact-form" id="my-form">
                     <div class="contact-main-wrapper">
                         <div class="form-name-wrapper">
                             <label>Name</label>
-                            <input type="text" name="name" id="id_name">
+                            <input type="text" name="name" id="id_name" required>
                         </div>
                         <div class="form-email-wrapper">
                             <label>Email</label>
-                            <input type="email" name="email" id="email-to">
+                            <input type="email" name="email" id="email-to" required>
                         </div>
                     </div>
                     <div class="text-wrapper">
                         <label>Message</label>
-                        <textarea class="text-box" name="message" id="body-message"></textarea>
+                        <textarea class="text-box" name="message" id="body-message" required></textarea>
                     </div>
                     <div class="submit-button">
                         <button type="submit" value="submit" name="submit" id="send_email">send</button>
@@ -293,8 +293,13 @@
         <script src="mobile-menu.js"></script>
         <script src="menu-scroll.js"></script>
         <script src="contact-form.js"></script>
+        <script src="form-val.js"></script>
         <script>
                 AOS.init();
+        </script>
+        <script>
+
+
         </script>
         <script
         src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"

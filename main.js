@@ -69,6 +69,9 @@
     app.get('/email-sent', (req, res) => {
         res.render('email-sent');
     });
+    app.get('/about', (req, res) => {
+        res.render('about');
+    });
 
 
 // nodeMailer 
@@ -103,7 +106,6 @@
             }
           });
     });
-
 // app listen on port 
     app.listen(port, () => {
     console.log(`server started on port: ${port}`);
