@@ -237,10 +237,6 @@ p {
         .skills-section {
             width: 100%;
             position: relative;
-            // background: rgb(102,205,170);
-            // background: linear-gradient(184deg, rgba(102,205,170,1) 7%, rgba(0,199,128,1) 89%, rgba(0,199,128,1) 100%);
-            // background: rgba(0,199,140,1);
-            // background: linear-gradient(180deg, rgba(0,0,0,1) 50%,  80%);
             background:rgb(245,245,245);
             color: black;
             padding:  1em 1em 2em 1em ;
@@ -251,23 +247,34 @@ p {
                 position: absolute;
                 top: -10px;
                 left: 0;
-                background: linear-gradient(27deg,#30d1b8 0%,#32e29e 100%);
+                background: whitesmoke;
                 transform: skewY(-3deg);
             }
-            .introduction {
-                width: 90%;
-                margin: 0 auto 1em auto;
-                padding: 1em 0 ;
-                text-align: center;
+            .main-card-wrapper {
                 position: relative;
-                h1 {                   
-                    margin-bottom: .6em;
-                    font-size: 2.5em;
-                }
-                p {
-                    font-weight: 400;
-                    padding: .5em 0;
-                    margin-bottom: .5em;
+                z-index: 5;
+                width: 100%;
+                margin-top: 3em;
+                .main-cards {
+                    width: 85%;
+                    margin: .5em auto 1.5em auto;
+                    text-align: center;
+                    background: #f5f6f7;
+                    padding: 1em;
+                    // box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+                    .card-img-wrapper {
+                        width: 70%;
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    h2 {
+                     color: #30d1b8;
+                     margin: .35em 0;
+                        
+                    }
+
 
                 }
             }
