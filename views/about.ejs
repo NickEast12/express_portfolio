@@ -96,28 +96,28 @@
             <div class="about-wrapper-intro">
                 <div class="about-wrapper-intro-scew"></div>
                 <div class="about-wrapper-grid">
-                    <div class="about-wrapper-img">
+                    <div class="about-wrapper-img js-tilt" data-tilt>
                         <div><img src="IMG_2193 copy.PNG"></div>
-                        <div><p>It's Me</p></div>
+                        <div><p>Trippy</p></div>
                     </div>
                     <div class="about-wrapper-content">
                             <h1>Hi i'm Nick...</h1>
-                            <p>I'm a aspiring front end developer from London, UK currently looking for my first professional position.</p>
-                            <p>I build websites, apps, games, play around with photoshop and take photos.</p>
-                            <p>This portfolio is still under construction and is subject to change as I can never settle on a design I like.</p>
+                            <p>I'm an aspiring front end developer from London, UK currently looking for my first professional position as a junior developer. </p>
+                            <p>I build websites, apps, games, play around with photoshop and take photos. Check out my portfolio or Github for my most recent work.</p>
+                            <p>I'm constantly learning and changing things up so this portfolio is subject to change. If you want to drop me a message use my form on the contact page.</p>
                     </div>
             </div>
             </div>
             <div class="skill-dist-wrapper">
                 <div class="skill-dist-scew"></div>
                 <div class="skills-about-wrapper">
-                    <h2>My skills distribution</h2>
+                    <h2>skills I use in my projects</h2>
                     <div class="chart-wrapper">
                         <canvas id="myChart" class="myChart"></canvas>
                     </div>
                 </div>
                 <div class="focus-wrapper">
-                    <h2> Current Focus</h2>
+                    <h2>What I'm currently focusing on</h2>
                     <div class="individual-skillbar-wrapper">
                             <div class="skillbar-title">
                                 <p>Project Building</p>
@@ -164,28 +164,27 @@
             <div class="resources-wrapper">
                 <div class="resource-wrapper-scew"></div>
                 <div class="resources-inner">
-                    <h2>Resources</h2>
-                    <p>If you've bothered to scroll this far down then make sure you check out some of the resources below:</p>
+                    <h2>Favourite Resources</h2>
+                    <p>Check out some of my favourite resources below.</p>
                     <div class="indiv-resources">
-                        <h4>Chart.js</h4>
-                        <p>this is a template till i can be bothered to type some shit in</p>
+                        <a href="https://www.chartjs.org/"><h4>Chart.js</h4></a>
+                        <p>Simple, clean and engaging HTML5 based JavaScript charts. Chart.js is an easy way to include animated, interactive graphs on your websites.</p>
                     </div>
                     <div class="indiv-resources">
-
-                            <h4>AOS</h4>
-                            <p>this is a template till i can be bothered to type some shit in</p>
-                        </div>
-                    <div class="indiv-resources">
-                        <h4>Tilt.js</h4>
-                        <p>this is a template till i can be bothered to type some shit in</p>
+                        <a href="https://michalsnik.github.io/aos/"><h4>AOS</h4></a>
+                        <p>A great animate on scroll library that has a tonne of customisable features and it easy to install.</p>
                     </div>
                     <div class="indiv-resources">
-                            <h4>TinyPNG</h4>
-                            <p>this is a template till i can be bothered to type some shit in</p>
+                        <a href="https://gijsroge.github.io/tilt.js/"><h4>Tilt.js</h4></a>
+                        <p>Make images or text come to life in 3D with Tilt.js <span class="tilt-span">Hover over the picture of me at the top of the page</span></p>
                     </div>
                     <div class="indiv-resources">
-                        <h4>UIgradients</h4>
-                        <p>this is a template till i can be bothered to type some shit in</p>
+                        <a href="https://tinypng.com/"><h4>TinyPNG</h4></a>
+                        <p>Great app to help reduce the size of images to make them load in much quicker, without losing any quality.</p>
+                    </div>
+                    <div class="indiv-resources">
+                        <a href="https://uigradients.com"><h4>UIgradients</h4></a>
+                        <p>Loads of gradients to choose from for when you are stuck on which colours go together.</p>
                     </div>
                 </div>
             </div>
@@ -273,5 +272,11 @@
         src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
         integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
         crossorigin="anonymous"></script>
+        <script src="tilt.jquery.js"></script>
+        <script>
+            $('.js-tilt').tilt({
+            reset: false
+            })
+        </script>
     </body>
 </html>

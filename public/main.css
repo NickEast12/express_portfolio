@@ -1423,6 +1423,10 @@ p {
     color: #30d1b8;
     font-size: 1.5em;
   }
+  body .resources-wrapper .resources-inner .indiv-resources .tilt-span {
+    font-style: italic;
+    font-weight: 600;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -2416,7 +2420,7 @@ p {
     bottom: -18px;
   }
   body .call-to-action-wrapper .call-to-action-inner button {
-    width: 50%;
+    width: 30%;
     font-size: .7em;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;

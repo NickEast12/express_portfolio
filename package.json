@@ -21,6 +21,7 @@
     "nodemailer": "^6.3.0",
     "particles.js": "^2.0.0",
     "sass": "^1.22.0",
+    "tilt.js": "^1.2.1",
     "xoauth2": "^1.2.0"
   }
 }

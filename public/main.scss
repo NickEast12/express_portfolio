@@ -1286,6 +1286,10 @@ p {
                         color: #30d1b8;
                         font-size: 1.5em;
                     }
+                    .tilt-span {
+                        font-style: italic;
+                        font-weight: 600;
+                    }
                 }
             }
         }
@@ -2499,7 +2503,7 @@ p {
             }
             .call-to-action-inner {
                 button {
-                    width: 50%;
+                    width: 30%;
                     font-size: .7em;
                     transition: all .3s ease-out;
                 }
