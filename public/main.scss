@@ -2436,7 +2436,7 @@ p {
         }
         // about page
         .about-main-wrapper {
-            height: 30vh;
+            height: 38vh;
             .about-main-scew {
                 bottom: -20px;
             }
@@ -2515,7 +2515,7 @@ p {
             font-size: 1.2em;
             .resources-inner {
                 width: 70%;
-                font-size: 1.2em;
+                font-size: 1.05em;
                 .indiv-resources {
                     margin-top: 2em;
                 }
@@ -2571,6 +2571,60 @@ p {
             }
              
 
+            
+        }
+        /// about page
+        .about-main-wrapper {
+            .about-main-scew {
+                height: 70px;
+                bottom: -26px;
+            }
+           
+            .about-title-content {
+                font-size: 1.2em;
+                margin-top: 2.5em;
+            }
+        }
+        .about-wrapper-intro {
+          
+            .about-wrapper-content {
+               margin-top: 6em;
+                
+               
+            }
+        }
+        .skill-dist-wrapper { 
+            .skill-dist-scew {
+                bottom: -25px;
+                height: 50px;
+            }
+
+           
+        }
+        .call-to-action-wrapper {
+            .call-to-action-skew {
+                height: 50px;
+                bottom: -25px;
+            }
+        }
+        .resources-wrapper {
+            padding-top: 5em;
+            margin-bottom: 18em;
+            
+            .resources-inner {
+                width: 70%;
+                
+                .indiv-resources {
+                    margin-top: 2em;
+                }
+                
+            }
+            .resource-wrapper-scew {
+                bottom: -25px;
+                height: 50px;
+                
+            }
+       
             
         }
     }

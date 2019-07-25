@@ -2355,7 +2355,7 @@ p {
     margin: .5em 0;
   }
   body .about-main-wrapper {
-    height: 30vh;
+    height: 38vh;
   }
   body .about-main-wrapper .about-main-scew {
     bottom: -20px;
@@ -2432,7 +2432,7 @@ p {
   }
   body .resources-wrapper .resources-inner {
     width: 70%;
-    font-size: 1.2em;
+    font-size: 1.05em;
   }
   body .resources-wrapper .resources-inner .indiv-resources {
     margin-top: 2em;
@@ -2470,6 +2470,39 @@ p {
     border: solid 2px #30d1b8;
     background: transparent;
     color: #30d1b8;
+  }
+  body .about-main-wrapper .about-main-scew {
+    height: 70px;
+    bottom: -26px;
+  }
+  body .about-main-wrapper .about-title-content {
+    font-size: 1.2em;
+    margin-top: 2.5em;
+  }
+  body .about-wrapper-intro .about-wrapper-content {
+    margin-top: 6em;
+  }
+  body .skill-dist-wrapper .skill-dist-scew {
+    bottom: -25px;
+    height: 50px;
+  }
+  body .call-to-action-wrapper .call-to-action-skew {
+    height: 50px;
+    bottom: -25px;
+  }
+  body .resources-wrapper {
+    padding-top: 5em;
+    margin-bottom: 18em;
+  }
+  body .resources-wrapper .resources-inner {
+    width: 70%;
+  }
+  body .resources-wrapper .resources-inner .indiv-resources {
+    margin-top: 2em;
+  }
+  body .resources-wrapper .resource-wrapper-scew {
+    bottom: -25px;
+    height: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
