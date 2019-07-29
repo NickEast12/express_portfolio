@@ -78,6 +78,9 @@
     app.get('/about', (req, res) => {
         res.render('about');
     });
+    app.get('/privacy-policy', (req, res) => {
+        res.render('privacy-policy');
+    });
 
 
 // nodeMailer 

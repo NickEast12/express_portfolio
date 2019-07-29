@@ -414,11 +414,13 @@ p {
   }
   body .skills-section .skew {
     width: 100%;
-    height: 35%;
+    height: 73em;
     position: absolute;
     top: -10px;
     left: 0;
-    background: whitesmoke;
+    background: #00c78c;
+    /* fallback for old browsers */
+    background: linear-gradient(27deg, #30d1b8 0%, #32e29e 100%);
     -webkit-transform: skewY(-3deg);
             transform: skewY(-3deg);
   }
@@ -427,12 +429,14 @@ p {
     z-index: 5;
     width: 100%;
     margin-top: 3em;
+    padding-bottom: 3em;
   }
   body .skills-section .main-card-wrapper .main-cards {
     width: 85%;
     margin: .5em auto 1.5em auto;
+    border-radius: 5px;
     text-align: center;
-    background: #f5f6f7;
+    background: whitesmoke;
     padding: 1em;
   }
   body .skills-section .main-card-wrapper .main-cards .card-img-wrapper {
@@ -530,15 +534,14 @@ p {
     top: -25px;
     left: 0;
     z-index: -2;
-    background: #00c78c;
-    /* fallback for old browsers */
-    background: linear-gradient(27deg, #30d1b8 0%, #32e29e 100%);
+    background: #30d168;
     -webkit-transform: skewY(3deg);
             transform: skewY(3deg);
   }
   body .recent-work-section .potfolio-wrapper {
     width: 90%;
     margin: 0 auto;
+    color: whitesmoke;
   }
   body .recent-work-section .potfolio-wrapper h1 {
     text-align: center;
@@ -1435,6 +1438,41 @@ p {
     font-style: italic;
     font-weight: 600;
   }
+  body .privacy-policy-wrapper {
+    width: 100%;
+    height: 95vh;
+    background: whitesmoke;
+  }
+  body .privacy-policy-wrapper .mobile-menu-wrapper .logo-fix {
+    margin: .2em 0 0 1em;
+    fill: #312e38;
+  }
+  body .privacy-policy-wrapper .mobile-menu-wrapper .hamburger-inner, body .privacy-policy-wrapper .mobile-menu-wrapper .hamburger-inner::before, body .privacy-policy-wrapper .mobile-menu-wrapper .hamburger-inner::after {
+    background: #312e38;
+  }
+  body .privacy-policy-wrapper .privacy-policy-inner {
+    width: 100%;
+    margin: 2em auto;
+  }
+  body .privacy-policy-wrapper .privacy-policy-inner h1 {
+    background: #312e38;
+    padding: .5em .7em;
+    color: whitesmoke;
+  }
+  body .privacy-policy-wrapper .privacy-policy-inner .privacy-policy-content {
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    margin-bottom: 13em;
+    color: #312e38;
+    padding: 1.5em 1.5em;
+    font-family: "Titillium Web", sans-serif;
+  }
+  body .privacy-policy-wrapper .privacy-policy-inner .privacy-policy-content h3 {
+    font-family: "Titillium Web", sans-serif;
+    margin: .5em 0;
+    font-weight: 600;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -1553,13 +1591,7 @@ p {
   }
   body .skills-section .skew {
     top: -11px;
-    height: 30%;
-  }
-  body .skills-section .introduction {
-    padding: .5em 0;
-  }
-  body .skills-section .skills-wrapper h2 {
-    margin-top: 0;
+    height: 77em;
   }
   body .recent-work-section {
     width: 100%;
@@ -1614,27 +1646,15 @@ p {
     margin: .8em auto;
   }
   body .skills-section .skew {
-    height: 42%;
+    height: 50em;
     top: -2em;
   }
-  body .skills-section .second-title {
-    width: 70%;
-    font-size: 1.1em;
-    margin-bottom: 3em;
-  }
-  body .skills-section .skills-wrapper h2 {
-    padding-top: 2em;
-    font-size: 2em;
-  }
-  body .skills-section .skill-bar-container-wrapper {
-    width: 100%;
-    margin: 2.5em 0;
-    padding-bottom: 2em;
+  body .skills-section .main-card-wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 5%;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding: 3em 0 7em 0;
   }
   body .recent-work-section {
     background: transparent;
@@ -1869,6 +1889,23 @@ p {
   }
   body .call-to-action-wrapper .call-to-action-inner button {
     width: 50%;
+  }
+  body .privacy-policy-wrapper .privacy-policy-inner h1 {
+    text-align: center;
+  }
+  body .privacy-policy-wrapper .privacy-policy-inner .privacy-policy-content {
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    margin-bottom: 13em;
+    color: #312e38;
+    padding: 1.5em 15.5em;
+    padding-bottom: 6em;
+  }
+  body .privacy-policy-wrapper .privacy-policy-inner .privacy-policy-content h3 {
+    font-family: "Titillium Web", sans-serif;
+    margin: .5em 0;
+    font-weight: 600;
   }
 }
 
@@ -2266,14 +2303,17 @@ p {
 }
 
 @media only screen and (min-width: 1040px) {
-  body .skills-section .introduction {
-    font-size: 1.2em;
+  body .skills-section .main-card-wrapper {
+    width: 80%;
+    margin: 0 auto;
   }
-  body .skills-section .introduction p {
-    font-family: karla;
+  body .skills-section .main-card-wrapper .main-cards {
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
   }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper .individual-skillbar-wrapper .skillbar-title {
-    font-size: 1.2em;
+  body .skills-section .main-card-wrapper .main-cards:hover {
+    -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   body .projects-background {
     height: 82vh;
