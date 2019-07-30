@@ -1517,6 +1517,12 @@ p {
                 top: -11px;
                 height: 77em;
             }
+            .main-card-wrapper {
+                height: 100%;
+                .main-cards {
+                    width: 70%;
+                }
+            }
         }
         .recent-work-section {
             width: 100%;
@@ -1546,6 +1552,7 @@ p {
                 font-size: 1.2em;   
             }
         }
+        
        
         
     }
