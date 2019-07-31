@@ -224,17 +224,12 @@ p {
                             font-size: .9em;
 
                         }
-                        .portfolio-button {
-                            // background: none;
-                            // color: $coolColour;
-                            // border: solid $coolColour 2px;
+                        .portfolio-button:hover {
+                            background: none;
+                            color: $coolColour;
+                            border: solid $coolColour 2px;
                         }
-                        .contact-me-button {
-                            // background: $coolColour;
-                            // border: none;
-                            // color: black;
-
-                        }
+                       
                     }
                     .lower-header-wrapper {
                         width: 90%;
@@ -279,6 +274,11 @@ p {
                             border-radius: 4px;
                             border: 2px solid hsla(0,0%,100%,.5);
                             font-size: 1em;
+                        }
+                        button:hover {
+                            background: none;
+                            color: $coolColour;
+                            border: solid $coolColour 2px;
                         }
                         
                     }
@@ -372,6 +372,11 @@ p {
                         border-radius: 4px;
                         border: 2px solid #312e38;
                         font-size: 1em;
+                    }
+                    button:hover {
+                        background: none;
+                        color: $coolColour;
+                        border: solid $coolColour 2px;
                     }
                 }
             }
@@ -2253,7 +2258,7 @@ p {
             height: 65em;
             .potfolio-wrapper {
                 font-size: 1.2em;
-                width: 75%;
+                width: 85%;
                 .projects-wrapper {
                     grid-gap: 1.5%;
                     .projects-inner-hp {

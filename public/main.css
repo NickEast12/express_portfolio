@@ -397,6 +397,11 @@ p {
     border: 2px solid rgba(255, 255, 255, 0.5);
     font-size: .9em;
   }
+  body .main-header .title-card .introduction .button-wrapper .portfolio-button:hover {
+    background: none;
+    color: #00c78c;
+    border: solid #00c78c 2px;
+  }
   body .main-header .title-card .introduction .lower-header-wrapper {
     width: 90%;
     margin-top: 17em;
@@ -440,6 +445,11 @@ p {
     border-radius: 4px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     font-size: 1em;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper button:hover {
+    background: none;
+    color: #00c78c;
+    border: solid #00c78c 2px;
   }
   body .recent-work-section {
     width: 100%;
@@ -523,6 +533,11 @@ p {
     border-radius: 4px;
     border: 2px solid #312e38;
     font-size: 1em;
+  }
+  body .recent-work-section .potfolio-wrapper .see-more-wrapper button:hover {
+    background: none;
+    color: #00c78c;
+    border: solid #00c78c 2px;
   }
   body .social-media {
     width: 100%;
@@ -2138,7 +2153,7 @@ p {
   }
   body .recent-work-section .potfolio-wrapper {
     font-size: 1.2em;
-    width: 75%;
+    width: 85%;
   }
   body .recent-work-section .potfolio-wrapper .projects-wrapper {
     grid-gap: 1.5%;
