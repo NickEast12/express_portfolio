@@ -341,15 +341,14 @@ p {
 
 @media only screen and (min-width: 320px) {
   body {
-    background-color: black;
+    background-color: #312e38;
   }
   body .main-header {
     width: 100%;
+    height: 200vh;
     background: #312e38;
-    height: 35em;
     position: relative;
     margin-top: -14px;
-    font-family: "Titillium Web", sans-serif;
   }
   body .main-header .title-card {
     display: -ms-grid;
@@ -361,9 +360,9 @@ p {
   }
   body .main-header .title-card .introduction {
     width: 90%;
-    text-align: center;
-    top: 20%;
-    left: 5%;
+    text-align: left;
+    top: 14%;
+    left: 10%;
     position: absolute;
     color: white;
   }
@@ -371,14 +370,16 @@ p {
     font-size: 1.3em;
     margin-top: .3em;
     color: #00c78c;
+    font-family: "Work Sans", sans-serif;
   }
   body .main-header .title-card .introduction h2 {
-    font-size: 1.9em;
-    width: 100%;
+    font-size: 1.7em;
+    width: 90%;
+    font-family: "Work Sans", sans-serif;
   }
   body .main-header .title-card .introduction .button-wrapper {
     width: 70%;
-    margin: 8em auto 0 auto;
+    margin: 1em 0;
     text-align: center;
     display: -ms-grid;
     display: grid;
@@ -386,232 +387,142 @@ p {
         grid-template-columns: 1fr;
   }
   body .main-header .title-card .introduction .button-wrapper button {
-    margin-bottom: 1em;
-    padding: .5em 0;
-    width: 100%;
-    font-size: 1em;
-    border-radius: 30px;
-    font-family: "Titillium Web", sans-serif;
-    text-transform: lowercase;
-  }
-  body .main-header .title-card .introduction .button-wrapper .portfolio-button {
-    background: none;
-    color: #00c78c;
-    border: solid #00c78c 2px;
-  }
-  body .main-header .title-card .introduction .button-wrapper .contact-me-button {
-    background: #00c78c;
-    border: none;
-    color: black;
-  }
-  body .skills-section {
-    width: 100%;
-    position: relative;
-    background: whitesmoke;
-    color: black;
-    padding: 1em 1em 2em 1em;
-    font-family: "Titillium Web", sans-serif;
-  }
-  body .skills-section .skew {
-    width: 100%;
-    height: 73em;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    background: #00c78c;
-    /* fallback for old browsers */
-    background: linear-gradient(27deg, #30d1b8 0%, #32e29e 100%);
-    -webkit-transform: skewY(-3deg);
-            transform: skewY(-3deg);
-  }
-  body .skills-section .main-card-wrapper {
-    position: relative;
-    z-index: 5;
-    width: 100%;
-    margin-top: 3em;
-    padding-bottom: 3em;
-  }
-  body .skills-section .main-card-wrapper .main-cards {
-    width: 85%;
-    margin: .5em auto 1.5em auto;
-    border-radius: 5px;
-    text-align: center;
-    background: whitesmoke;
-    padding: 1em;
-  }
-  body .skills-section .main-card-wrapper .main-cards .card-img-wrapper {
-    width: 70%;
-    margin: 0 auto;
-  }
-  body .skills-section .main-card-wrapper .main-cards .card-img-wrapper img {
-    width: 100%;
-  }
-  body .skills-section .main-card-wrapper .main-cards h2 {
-    color: #30d1b8;
-    margin: .35em 0;
-  }
-  body .skills-section .skills-wrapper {
-    width: 90%;
-    margin: 0 auto 1.5em auto;
-    padding: 1em 0;
-    text-align: center;
-  }
-  body .skills-section .skills-wrapper h2 {
-    font-size: 1.7em;
-    margin: 2em 0 1.25em 0;
-    text-transform: capitalize;
-    text-align: center;
-  }
-  body .skills-section .skills-wrapper .skills-button {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    cursor: pointer;
-    display: block;
-    color: white;
-    background: #312e38;
-    border: none;
-    white-space: nowrap;
-    border-radius: 8px;
-    border-width: 0px 0px 3px 0px;
-    padding: 9px 15px 6px 15px;
-    text-align: left;
-    margin: 1em .2em;
-    font-size: 1em;
-  }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper {
     margin-top: 1em;
-  }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper .individual-skillbar-wrapper {
-    margin-top: .5em;
-  }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper .individual-skillbar-wrapper .skillbar-title {
-    text-align: left;
-    margin: .25em 0;
+    padding: 10px 5px;
+    -webkit-tap-highlight-color: transparent;
+    background-color: rgba(255, 255, 255, 0.02);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     font-size: .9em;
   }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper .individual-skillbar-wrapper .skillbar {
-    width: 100%;
-    height: 1.5em;
-    background: #dadfe1;
-    position: relative;
-    border-radius: 5px;
-  }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper .individual-skillbar-wrapper .skillbar .inner-skillbar {
-    position: absolute;
-    top: 0;
-    height: 1.5em;
-    background: #312e38;
-    z-index: 1;
-    border-radius: 5px;
-  }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper .individual-skillbar-wrapper .skillbar-scale {
-    display: -ms-grid;
-    display: grid;
-    font-size: .9em;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    margin-top: .5em;
-  }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper .individual-skillbar-wrapper .skillbar-scale .zero {
+  body .main-header .title-card .introduction .lower-header-wrapper {
+    width: 90%;
+    margin-top: 17em;
     text-align: left;
   }
-  body .skills-section .skills-wrapper .skill-bar-container-wrapper .individual-skillbar-wrapper .skillbar-scale .onehundred {
-    text-align: right;
+  body .main-header .title-card .introduction .lower-header-wrapper h1 {
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 100;
+    line-height: 36px;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper i {
+    font-style: normal;
+    color: #c575e4;
+    font-weight: 600;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper span:nth-child(1) {
+    color: #DF6C74;
+    font-weight: 600;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper span:nth-child(2) {
+    color: #74df6c;
+    font-weight: 600;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper span:nth-child(3) {
+    color: #ecce79;
+    font-weight: 600;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper span:nth-child(4) {
+    color: #79ECCE;
+    font-weight: 600;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper button {
+    margin-top: 2em;
+    padding: 10px 20px;
+    -webkit-tap-highlight-color: transparent;
+    background-color: rgba(255, 255, 255, 0.02);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 1em;
   }
   body .recent-work-section {
     width: 100%;
-    height: 30em;
-    margin-top: -1.6em;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 40px;
-    font-family: "Titillium Web", sans-serif;
-  }
-  body .recent-work-section .skew2 {
-    width: 100%;
-    height: 33em;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    z-index: -2;
-    background: #30d168;
-    -webkit-transform: skewY(3deg);
-            transform: skewY(3deg);
+    height: 65em;
+    background: whitesmoke;
   }
   body .recent-work-section .potfolio-wrapper {
     width: 90%;
     margin: 0 auto;
-    color: whitesmoke;
+    text-align: center;
+    padding: 4em 0;
   }
   body .recent-work-section .potfolio-wrapper h1 {
-    text-align: center;
-    font-size: 1.7em;
-    margin: 1em 0;
-    padding-top: 1em;
-    font-weight: 400;
+    font-family: "Karla", sans-serif;
   }
   body .recent-work-section .potfolio-wrapper .projects-wrapper {
-    margin-top: 1.2em;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 80px 100px 150px;
-        grid-template-rows: 80px 100px 150px;
-        grid-template-areas: "a a" "a a" "b c";
-    grid-gap: 4%;
-  }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects {
     width: 100%;
+    margin: 3em 0;
   }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects img {
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp {
+    width: 100%;
+    height: 10em;
+    opacity: .9;
+    position: relative;
+    margin: 1em 0;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-wrapper-colour {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    mix-blend-mode: multiply;
   }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project1 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: a;
-    width: 80%;
-    margin: 0 auto;
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .colour-1 {
+    background: #c575e4;
   }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project1 img {
-    height: 100%;
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .colour-2 {
+    background: #63adf5;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .colour-3 {
+    background: #5f697f;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .colour-4 {
+    background: #df6c74;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-text {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    text-align: left;
+    z-index: 4;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-text h5 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img {
     width: 100%;
+    position: absolute;
+    z-index: -1;
   }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: b;
-  }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project2 img {
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img img {
+    width: 100%;
     height: 100%;
-  }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: c;
-  }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project3 img {
-    height: 100%;
+    opacity: .4;
   }
   body .recent-work-section .potfolio-wrapper .see-more-wrapper {
-    width: 80%;
-    margin: 4em auto 0 auto;
-    text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
-  body .recent-work-section .potfolio-wrapper .see-more-button {
-    padding: .5em 3em;
-    background: #312e38;
-    color: white;
-    border: solid 2px #00c78c;
+  body .recent-work-section .potfolio-wrapper .see-more-wrapper button {
+    padding: 10px 20px;
+    -webkit-tap-highlight-color: transparent;
+    background-color: rgba(255, 255, 255, 0.02);
+    color: #312e38;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #312e38;
     font-size: 1em;
-    border-radius: 30px;
-    font-family: "Titillium Web", sans-serif;
-    text-transform: lowercase;
-    width: 80%;
   }
   body .social-media {
     width: 100%;
@@ -1477,7 +1388,7 @@ p {
 
 @media only screen and (min-width: 375px) {
   body .main-header {
-    height: 95vh;
+    height: 200vh;
   }
   body .main-header .title-card .introduction {
     margin-top: 3em;
@@ -1488,9 +1399,16 @@ p {
   body .main-header .title-card .introduction h2 {
     margin-top: .2em;
   }
-  body .recent-work-section .projects-wrapper {
-    width: 80%;
-    margin: 0 auto;
+  body .main-header .title-card .introduction .lower-header-wrapper {
+    margin-top: 25em;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img {
+    width: 100%;
+    height: 100%;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img img {
+    width: 100%;
+    height: 100%;
   }
   body .portfolio-background .portfolio-title-content {
     margin-top: 5em;
@@ -1569,38 +1487,41 @@ p {
 }
 
 @media only screen and (min-width: 414px) {
-  body {
-    width: 100%;
-  }
   body .main-header {
-    height: 100vh;
-    width: 100%;
+    height: 200vh;
   }
-  body .main-header .title-card .mobile-overlay {
-    width: 100%;
+  body .main-header .title-card .introduction {
+    margin-top: 3em;
   }
-  body .main-header .title-card .mobile-overlay .colourful-clip {
-    width: 100%;
+  body .main-header .title-card .introduction h1 {
+    font-size: 1.5em;
   }
-  body .main-header .title-card .mobile-overlay i {
-    top: 6%;
-    right: 8%;
+  body .main-header .title-card .introduction h2 {
+    margin-top: .2em;
   }
-  body .skills-section {
-    width: 100%;
-  }
-  body .skills-section .skew {
-    top: -11px;
-    height: 77em;
-  }
-  body .skills-section .main-card-wrapper {
-    height: 100%;
-  }
-  body .skills-section .main-card-wrapper .main-cards {
-    width: 70%;
+  body .main-header .title-card .introduction .lower-header-wrapper {
+    margin-top: 28em;
   }
   body .recent-work-section {
     width: 100%;
+    height: 75em;
+    background: whitesmoke;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper {
+    width: 100%;
+    height: 52em;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp {
+    height: 12em;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img {
+    width: 100%;
+    height: 100%;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img img {
+    width: 100%;
+    height: 100%;
+    opacity: .4;
   }
   body .social-media {
     margin-right: 9em;
@@ -1651,75 +1572,45 @@ p {
     width: 65%;
     margin: .8em auto;
   }
-  body .skills-section .skew {
-    height: 50em;
-    top: -2em;
-  }
-  body .skills-section .main-card-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    padding: 3em 0 7em 0;
-  }
   body .recent-work-section {
-    background: transparent;
-  }
-  body .recent-work-section .potfolio-wrapper h1 {
-    padding: 1em 0;
-    font-size: 2em;
+    width: 100%;
+    height: 40em;
+    background: whitesmoke;
   }
   body .recent-work-section .potfolio-wrapper .projects-wrapper {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
+    width: 85%;
+    height: 22em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25%;
     margin: 0 auto;
-    -ms-grid-rows: 160px 160px;
-        grid-template-rows: 160px 160px;
-        grid-template-areas: 'a b c' 'a b c';
+    padding: 2em 0;
   }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project1 {
-    margin-bottom: 4em;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: a;
-    width: 100%;
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp {
+    height: 100%;
   }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project1 img {
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img {
     width: 100%;
     height: 100%;
   }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project2 {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    grid-area: b;
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img img {
+    width: 100%;
+    height: 100%;
   }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .project3 {
-    margin-top: 4em;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    grid-area: c;
-  }
-  body .recent-work-section .potfolio-wrapper .see-more-wrapper {
-    margin: 1.3em auto;
-  }
-  body .recent-work-section .potfolio-wrapper .see-more-wrapper button {
-    width: 50%;
-    margin: 0;
+  body .recent-work-section .see-more-wrapper button {
+    margin-top: 3em;
+    font-size: 1em;
   }
   body .social-media {
     height: 20em;
   }
   body .social-media .social-media-scew {
-    height: 25em;
+    height: 24em;
   }
   body .social-media .social-media-content {
-    padding-top: 5em;
+    padding-top: 0;
   }
   body .footer {
     height: 37em;
@@ -1917,123 +1808,56 @@ p {
 
 @media only screen and (min-width: 1024px) {
   body .main-header {
-    height: 100vh;
+    height: 200vh;
   }
   body .main-header .title-card .introduction {
     margin-top: 2em;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 10em;
   }
   body .main-header .title-card .introduction h1 {
     font-size: 1.3em;
   }
   body .main-header .title-card .introduction h2 {
-    margin-top: .2em;
     font-size: 3em;
   }
   body .main-header .title-card .introduction .button-wrapper {
     margin-top: 3em;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
   }
   body .main-header .title-card .introduction .button-wrapper button {
-    font-size: .9em;
-    padding: .82em 0;
+    margin: 0;
+    width: 40%;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper {
+    margin-top: 25em;
+    font-size: 1.2em;
+  }
+  body .main-header .title-card .introduction .lower-header-wrapper h1 {
+    margin-top: 1em;
+  }
+  body .recent-work-section {
+    height: 50em;
+  }
+  body .recent-work-section .potfolio-wrapper {
     width: 80%;
-    cursor: pointer;
-  }
-  body .main-header .title-card .introduction .button-wrapper .portfolio-button {
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-  }
-  body .main-header .title-card .introduction .button-wrapper .contact-me-button {
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-  body .main-header .title-card .introduction .button-wrapper .portfolio-button:hover {
-    background: #00c78c;
-    color: #312e38;
-  }
-  body .main-header .title-card .introduction .button-wrapper .contact-me-button:hover {
-    background: transparent;
-    color: #00c78c;
-    border: solid 2px #00c78c;
-  }
-  body .main-header .title-card .mobile-overlay .colourful-clip {
-    height: 22vh;
-  }
-  body .main-header .title-card .mobile-overlay .up-arrow {
-    top: 1.45em;
-    right: 5em;
-    width: 0;
-    height: 0;
-  }
-  body .main-header .title-card .mobile-overlay nav {
-    margin-top: 3.2em;
-  }
-  body .main-header .title-card .mobile-overlay nav ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-  body .main-header .title-card .mobile-overlay nav ul .logo-li {
-    position: absolute;
-    top: -1em;
-  }
-  body .main-header .title-card .mobile-overlay nav ul .links-border {
-    font-size: 1em;
-    cursor: pointer;
-    opacity: .7;
-    -webkit-transition: opacity .5s ease;
-    transition: opacity .5s ease;
+    margin: 0 auto;
     text-align: center;
   }
-  body .main-header .title-card .mobile-overlay nav ul .links-border:hover {
-    opacity: 1;
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp {
+    height: 14em;
   }
-  body .skills-section .skew {
-    -webkit-transform: skewY(-1.5deg);
-            transform: skewY(-1.5deg);
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img {
+    width: 100%;
   }
-  body .skills-section .second-title {
-    padding: 4em 0;
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img img {
+    width: 100%;
+    height: 100%;
   }
-  body .skills-section .skills-wrapper {
-    padding-bottom: 4em;
-  }
-  body .recent-work-section .skew2 {
-    -webkit-transform: skewY(1.5deg);
-            transform: skewY(1.5deg);
-    top: -3em;
-    height: 43em;
-  }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects {
-    position: relative;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-  }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects img {
-    position: absolute;
-  }
-  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects:hover {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-  body .recent-work-section .potfolio-wrapper .see-more-wrapper .see-more-button {
-    font-size: 1.25em;
-    margin-top: 6.2em;
-    padding: .75em 0;
-    width: 30%;
-    -webkit-transition: all .5s ease-in;
-    transition: all .5s ease-in;
-    cursor: pointer;
-  }
-  body .recent-work-section .potfolio-wrapper .see-more-wrapper .see-more-button:hover {
-    background: whitesmoke;
-    color: #312e38;
-    border: none;
+  body .recent-work-section .potfolio-wrapper .see-more-wrapper button {
+    margin-top: 14em;
   }
   body .social-media {
     padding-top: 5em;
@@ -2309,17 +2133,64 @@ p {
 }
 
 @media only screen and (min-width: 1040px) {
-  body .skills-section .main-card-wrapper {
-    width: 80%;
-    margin: 0 auto;
+  body .recent-work-section {
+    height: 65em;
   }
-  body .skills-section .main-card-wrapper .main-cards {
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+  body .recent-work-section .potfolio-wrapper {
+    font-size: 1.2em;
+    width: 75%;
   }
-  body .skills-section .main-card-wrapper .main-cards:hover {
-    -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  body .recent-work-section .potfolio-wrapper .projects-wrapper {
+    grid-gap: 1.5%;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp {
+    height: 17em;
+    cursor: pointer;
+    margin: .25em 0;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-wrapper-colour {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    mix-blend-mode: multiply;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-text {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .colour-1, body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .colour-2, body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .colour-3, body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .colour-4 {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp .pr-i-inner-img img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp:hover .colour-1, body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp:hover .colour-2, body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp:hover .colour-3, body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp:hover .colour-4 {
+    opacity: 0;
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp:hover .pr-i-inner-img img {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  body .recent-work-section .potfolio-wrapper .projects-wrapper .projects-inner-hp:hover .pr-i-inner-text {
+    display: none;
+  }
+  body .recent-work-section .potfolio-wrapper .see-more-wrapper button {
+    margin-top: 15em;
+    font-size: 1.2em;
   }
   body .projects-background {
     height: 82vh;
