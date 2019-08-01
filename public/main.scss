@@ -2349,10 +2349,12 @@ p {
         .projects-description-wrapper-two {
         margin-bottom: 23em;
         padding: 3em 0 4em 0 ;
-        
-        
         .description-content {
             font-size: 1.2em;
+            width: 50%;
+            text-align: left;
+            margin-top: -3em;
+            padding-bottom: 3em;
         }
     }   
         // contact page
@@ -2452,6 +2454,8 @@ p {
             .about-wrapper-img {
                 width: 50%;
                 margin-top: 3em;
+                height: 23em;
+
             }
             .about-wrapper-content {
                 width: 100%;

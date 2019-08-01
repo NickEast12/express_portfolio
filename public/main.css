@@ -2240,6 +2240,10 @@ p {
   }
   body .projects-description-wrapper-two .description-content {
     font-size: 1.2em;
+    width: 50%;
+    text-align: left;
+    margin-top: -3em;
+    padding-bottom: 3em;
   }
   body .contact-background {
     background: #312e38;
@@ -2327,6 +2331,7 @@ p {
   body .about-wrapper-intro .about-wrapper-img {
     width: 50%;
     margin-top: 3em;
+    height: 23em;
   }
   body .about-wrapper-intro .about-wrapper-content {
     width: 100%;
